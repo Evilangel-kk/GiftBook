@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding
+            android:left="5dp"
+            android:right="5dp"
+            android:top="3dp"
+            android:bottom="3dp"/>
+        <solid android:color="@color/editTextBg"  ></solid>
+        <!-- 外边框线的粗细及其颜色 -->
+
+    <stroke
+        android:width="3dp"
+        android:color="@color/editTextStroke" >
+    </stroke>
+</shape>

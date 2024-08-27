@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">礼金本</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">查询</string>
+    <string name="list">列表</string>
+    <string name="record">添加</string>
+    <string name="search_name">输入搜素的姓名</string>
+</resources>

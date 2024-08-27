@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.InsertPageFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- 姓名 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="姓名："
+                android:textAppearance="@style/EditTitleFont"
+                android:layout_gravity="center_vertical"
+                android:gravity="end" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="@style/EditTitleFont"
+                android:hint="请输入姓名"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- 钱数 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="钱数："
+                android:textAppearance="@style/EditTitleFont"
+                android:layout_gravity="center_vertical"
+                android:gravity="end" />
+
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="@style/EditTitleFont"
+                android:hint="请输入钱数"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!-- 支出还是收入 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="类型："
+                android:textAppearance="@style/EditTitleFont"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/EditTitleFont"
+                    android:text="收入" />
+
+                <RadioButton
+                    android:id="@+id/radioExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/EditTitleFont"
+                    android:text="支出" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 事件 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="事件："
+                android:textAppearance="@style/EditTitleFont"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"/>
+
+            <EditText
+                android:id="@+id/editTextEvent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textAppearance="@style/EditTitleFont"
+                android:hint="请输入事件"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- 时间选择器 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日期："
+                android:textAppearance="@style/EditTitleFont"
+                android:layout_gravity="center_vertical"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/selectedDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textAppearance="@style/EditTitleFont"
+                android:text="年-月-日"/>
+            <TextView
+                android:id="@+id/clickChooseDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:textAppearance="@style/chooseDateFont"
+                android:text="选择" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:gravity="end">
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/submit_btn"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="添加" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

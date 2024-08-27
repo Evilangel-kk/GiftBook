@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchPageFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="left"
+                android:text="历史记录列表"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+            <ImageButton
+                android:id="@+id/shareBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_share_btn"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/record_list_fragment"
+            android:name="com.example.accounting.RecordListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/record_list_fragment"-->
+<!--            android:name="com.example.accounting.RecordListFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <fragment-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </FrameLayout>-->
+    </LinearLayout>
+</FrameLayout>
