@@ -9,7 +9,7 @@
 - **记录礼金**：支持添加礼金记录。
 - **删除记录**：可以删除不再需要的记录。
 - **查看记录**：提供查询功能以查看已记录的礼金信息。
-- **安装包**：在 [Releases](https://github.com/Evilangel-kk/GiftBook/app/release) 页面下载最新的 APK 安装包。
+- **安装包**：在 [Releases](app/release) 页面下载最新的 APK 安装包。
 
 ## 安装
 
