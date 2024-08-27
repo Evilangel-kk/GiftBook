@@ -13,7 +13,7 @@
 
 ## 安装
 
-1. 访问 [Releases](https://github.com/Evilangel-kk/GiftBook/app/releases) 页面。
+1. 访问 [Releases](app/release/app-release.apk) 页面。
 2. 下载最新的 APK 文件。
 3. 在您的 Android 设备上安装应用程序。
 
